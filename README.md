@@ -91,7 +91,9 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
   A:應該是配對資料錯亂了。
   * 解決方式:
     * 到firmware/nrfmicro_13-settings_reset-zmk/底下，zmk.uf2燒錄檔，一樣用右鍵點RAW按鈕另存新檔。
+    
       進入bootloader模式，把這個檔案燒進去，重置配對資訊。
+      
     * 兩邊燒完後同時按Reset鍵，應該就可以重新配對。
   
 *  
