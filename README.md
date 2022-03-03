@@ -45,8 +45,11 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
 
 
 # 按鍵操作功能
-  目前沒有更改keycode的user interface，只能靠更改程式碼來改變鍵碼。
-  可以用文字編輯器打開 ergodash/ergodash.keymap 修改需要的鍵碼，然後進行編譯燒錄。
+  * 目前沒有更改keycode的user interface，只能靠更改程式碼來改變鍵碼。
+  
+  * 可以用文字編輯器打開 ergodash/ergodash.keymap 修改需要的鍵碼，然後進行編譯燒錄。
+  
+  * https://github.com/ouser555/ergodash_v99_ble/blob/main/ergodash/ergodash.keymap
   
   常用功能粗略介紹:
   
