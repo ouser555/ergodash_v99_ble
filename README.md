@@ -10,7 +10,7 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
 * user interface => zmk官方尚未支援，未來會更新
 * 110mAh
 * 充電電流100mA，慢充延長電池壽命。
-* 15分鐘進入睡眠模式，耗電流60~80uA左右
+* 15分鐘未操作，進入睡眠模式，耗電流60~80uA左右
 * 操作中待機，耗電流800uA左右
 * 配對廣播狀態，耗電流1000uA左右
 
