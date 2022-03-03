@@ -1,7 +1,8 @@
 ## ergodash_v99_ble
 zmk - ergodash - trackpoint - bluetooth - split keyboard
-
-
+![image](https://github.com/ouser555/ergodash_v99_ble/blob/main/pic/02.jpg)
+![image](https://github.com/ouser555/ergodash_v99_ble/blob/main/pic/03.jpg)
+![image](https://github.com/ouser555/ergodash_v99_ble/blob/main/pic/04.jpg)
 ## 版本特色
 * zmk / bluetooth 5.2 nrf52840
 * hot swappable key switches
