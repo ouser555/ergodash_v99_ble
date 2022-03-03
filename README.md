@@ -61,6 +61,7 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
     3. 重新開機。
 
 * Q:左右邊沒有辦法成功配對
+
   A:應該是配對資料錯亂了。
   * 解決方式:
     * 到firmware/nrfmicro_13-settings_reset-zmk/底下，zmk.uf2燒錄檔，一樣用右鍵點RAW按鈕另存新檔。
