@@ -34,6 +34,8 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
 * 左右手燒好各自的燒錄檔後可以兩邊同時按Reset鍵，讓兩邊鍵盤自動配對。
 
   正常情況下左右邊配對好就會一直保持著，除非刻意去改。
+  
+* 不使用TRRS線的設計，即使是USB有線模式，左右手鍵盤通訊還是使用無線。  
 
 * 左邊鍵盤為主鍵盤，只有插左邊USB電腦端才會辨識為鍵盤。
 
@@ -41,7 +43,7 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
 
 * 可先使用USB模式測試左右鍵盤是否有配對成功。
 
-* 藍牙模式與一般藍牙鍵盤使用方式無異。
+* 藍牙模式與一般藍牙鍵盤配對使用方式無異。
 
 
 # 按鍵操作功能
