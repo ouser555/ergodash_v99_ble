@@ -58,22 +58,22 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
     
     3. LOWER鍵按住，同時按上方第一個鍵為RGB色相切換。
     
-    目前沒有設定更多RGB功能鍵
+      * 目前沒有設定更多RGB功能鍵
     
-    其他請參照ZMK官法鍵碼
-    https://zmk.dev/docs/behaviors/underglow
+      * 其他請參照ZMK官法鍵碼
+      * https://zmk.dev/docs/behaviors/underglow
     
-    
+      
   * 藍牙功能
     
-    參照ZMK官方鍵碼
-    https://zmk.dev/docs/behaviors/bluetooth
-    
+      * 參照ZMK官方鍵碼
+      * https://zmk.dev/docs/behaviors/bluetooth
+      
     
   * 一般鍵碼
     
-    參照ZMK官方鍵碼
-    https://zmk.dev/docs/codes/
+      * 參照ZMK官方鍵碼
+      * https://zmk.dev/docs/codes/
 
 
 ## 常見問題
