@@ -66,7 +66,7 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
     
       * 目前沒有設定更多RGB功能鍵
     
-      * 其他請參照ZMK官法鍵碼
+      * 其他請參照ZMK官方鍵碼
       * https://zmk.dev/docs/behaviors/underglow
     
       
