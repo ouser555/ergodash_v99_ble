@@ -86,16 +86,22 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
 * 1. 先建立ZMK開發環境
   * 在linux terminal底下，依照官網的說明無腦複製貼上執行幾乎可以完成所有步驟
   * https://zmk.dev/docs/development/setup
-
-* 2.將ergodash資料夾
+  * 如果是使用Windows系統，選擇Windows菜單即是Windows的說明，
+  * Windows編譯方式沒實際試過，但應該是不會有問題才是。
+  
+  
+* 2. 將ergodash資料夾
   * https://github.com/ouser555/ergodash_v99_ble/tree/main/ergodash
   * 放到ZMK/app/boards/shields/資料夾底下
   
+  
   * 此時可以修改自己需要的 ergodash.keymap
+  
   
   * 用terminal進到zmk/app/ 後執行
     * west build -d build/left -b nrfmicro_13 -- -DSHIELD=ergodash_left
     * west build -d build/right -b nrfmicro_13 -- -DSHIELD=ergodash_right
+  
   
   * 成功後燒錄檔會放在
     * /zmk/app/build/left/zephyr/zmk.uf2
