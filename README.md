@@ -81,6 +81,26 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
       * 參照ZMK官方鍵碼
       * https://zmk.dev/docs/codes/
 
+## 編譯方式
+
+* 1. 先建立ZMK開發環境
+  * 在linux terminal底下，依照官網的說明無腦複製貼上執行幾乎可以完成所有步驟
+  * https://zmk.dev/docs/development/setup
+
+* 2.將ergodash資料夾
+  * https://github.com/ouser555/ergodash_v99_ble/tree/main/ergodash
+  * 放到ZMK/app/boards/shields/資料夾底下
+  
+  * 此時可以修改自己需要的 ergodash.keymap
+  
+  * 用terminal進到zmk/app/ 後執行
+    * west build -d build/left -b nrfmicro_13 -- -DSHIELD=ergodash_left
+    * west build -d build/right -b nrfmicro_13 -- -DSHIELD=ergodash_right
+  
+  * 成功後燒錄檔會放在
+    * /zmk/app/build/left/zephyr/zmk.uf2
+    * /zmk/app/build/right/zephyr/zmk.uf2
+
 
 ## 常見問題
 * Q1:連按兩下Reset鍵進入bootloader模式，綠燈有閃爍，但是沒有辨識成隨身碟。
