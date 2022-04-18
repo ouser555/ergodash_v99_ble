@@ -120,8 +120,13 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
 
 * Q2:左右邊沒有辦法成功配對
 
-  A:應該是配對資料錯亂了。
-  * 解決方式:
+  A:應該是配對資料錯亂了，或是目前頻道已有其他配對資料。
+  * 解決方式1:
+  
+    * 找到keymap裡面有沒有按鍵被設為 &bt BT_CLR
+    * 按這個鍵可以清除目前鍵盤頻道的配對資料，然後就可以重新配對。
+    
+  * 解決方式2:
     * 到firmware/nrfmicro_13-settings_reset-zmk/底下，zmk.uf2燒錄檔，一樣用右鍵點RAW按鈕另存新檔。
     
       進入bootloader模式，把這個檔案燒進去，重置配對資訊。
