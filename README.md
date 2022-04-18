@@ -47,14 +47,14 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
 * 藍牙模式與一般藍牙鍵盤配對使用方式無異。
 
 
-# 按鍵操作功能
+## 更改按鍵映射功能
   * 目前沒有更改keycode的user interface，只能靠更改程式碼來改變鍵碼。
   
   * 可以用文字編輯器打開 ergodash/ergodash.keymap 修改需要的鍵碼，然後進行編譯燒錄。
   
   * https://github.com/ouser555/ergodash_v99_ble/blob/main/ergodash/ergodash.keymap
   
-  常用功能粗略介紹:
+## 常用功能粗略介紹:
   
   * RGB (此版已預設3個RGB功能鍵)
     
@@ -118,23 +118,35 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
     3. 重新開機。
 
 
-* Q2:左右邊沒有辦法成功配對
+* Q2:無法和主機成功配對
 
   A:應該是配對資料錯亂了，或是目前頻道已有其他配對資料。
+
   * 解決方式1:
+
+    找到keymap裡面有沒有按鍵被設為 &bt BT_CLR
+    按這個鍵可以清除目前鍵盤頻道的配對資料，然後就可以重新配對。
   
-    * 找到keymap裡面有沒有按鍵被設為 &bt BT_CLR
-    * 按這個鍵可以清除目前鍵盤頻道的配對資料，然後就可以重新配對。
-    
   * 解決方式2:
-    * 到firmware/nrfmicro_13-settings_reset-zmk/底下，zmk.uf2燒錄檔，一樣用右鍵點RAW按鈕另存新檔。
+
+    到firmware/nrfmicro_13-settings_reset-zmk/底下，zmk.uf2燒錄檔，一樣用右鍵點RAW按鈕另存新檔。
+
+    進入bootloader模式，把這個檔案燒進去，重置配對資訊。
+
+    然後再重燒一次左右手的daochoc燒錄檔。
+
+    兩邊燒完後同時按Reset鍵，左右手鍵盤連接後，再與電腦配對應該就可以成功配對。
+
+* Q3:左右邊沒有辦法成功配對
+
+  A:應該是配對資料錯亂了，或是目前頻道已有其他配對資料。
+
+  * 解決方式:
     
-      進入bootloader模式，把這個檔案燒進去，重置配對資訊。
-      
-      
-    * 然後再重燒一次左右手的ergodash燒錄檔。
-    
-    
-    * 兩邊燒完後同時按Reset鍵，應該就可以重新配對。
-  
-*  
+    到firmware/nrfmicro_13-settings_reset-zmk/底下，zmk.uf2燒錄檔，一樣用右鍵點RAW按鈕另存新檔。
+
+    進入bootloader模式，把這個檔案燒進去，重置配對資訊。
+
+    然後再重燒一次左右手的ergodash燒錄檔。
+
+兩邊燒完後同時按Reset鍵，應該就可以重新配對。
