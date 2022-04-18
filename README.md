@@ -149,4 +149,4 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
 
     然後再重燒一次左右手的ergodash燒錄檔。
 
-兩邊燒完後同時按Reset鍵，應該就可以重新配對。
+    兩邊燒完後同時按Reset鍵，應該就可以重新配對。
