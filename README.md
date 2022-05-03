@@ -108,6 +108,16 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
     * /zmk/app/build/right/zephyr/zmk.uf2
 
 
+  ### 補充注意事項
+  * 編譯已編譯過的鍵盤
+    * 之前編譯過的鍵盤，會有一些檔案產生，並且被保留下來。
+    * 這些檔案有時會直接套用在新編譯的鍵盤上，造成有些修改沒有生效，
+    * 所以一般建議編譯時加上-p這個參數，在編譯時可以先清除掉這些檔案。
+      
+    * west build -p -d build/left -b nrfmicro_13 -- -DSHIELD=ergodash_left
+    * west build -p -d build/right -b nrfmicro_13 -- -DSHIELD=ergodash_right
+
+
 ## 常見問題
 * Q1:連按兩下Reset鍵進入bootloader模式，綠燈有閃爍，但是沒有辨識成隨身碟。
 
