@@ -86,8 +86,8 @@ zmk - ergodash - trackpoint - bluetooth - split keyboard
 * 1. 先建立ZMK開發環境
   * 在linux terminal底下，依照官網的說明無腦複製貼上執行幾乎可以完成所有步驟
   * https://zmk.dev/docs/development/setup
-  * 如果是使用Windows系統，選擇Windows菜單即是Windows的說明，
-  * Windows編譯方式沒實際試過，但應該是不會有問題才是。
+  * 如果是使用Debian/Ubuntu系統，選擇Debian/Ubuntu菜單即是Debian/Ubuntu的說明，
+  * Windows編譯方式實際試過，有一些問題，請盡量使用其他方式。
   
   
 * 2. 將ergodash資料夾
